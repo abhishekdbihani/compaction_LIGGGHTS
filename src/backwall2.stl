@@ -1,0 +1,19 @@
+# ======
+#backwall.stl:
+solid Mesh
+facet normal 1.000000 0.000000 0.000000
+outer loop
+vertex -0.50000 -0.50000 -0.50000
+vertex -0.50000  -0.50000 0.00000
+vertex  -0.50000  0.50000 -0.50000
+endloop
+endfacet
+facet normal 1.000000 0.000000 0.000000
+outer loop
+vertex -0.50000 0.50000 0.0000
+vertex -0.50000  -0.50000 0.0000
+vertex  -0.50000  0.50000 -0.50000
+endloop
+endfacet
+endsolid Mesh
+#=====

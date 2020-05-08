@@ -1,0 +1,353 @@
+<CustomFilterDefinitions>
+  <CustomProxyDefinition name="NetworkPores" group="filters">
+    <CompoundSourceProxy id="691" servers="1">
+      <Proxy group="filters" type="Glyph" id="540" servers="1" compound_name="Glyph1">
+        <Property name="GlyphTransform" id="540.GlyphTransform" number_of_elements="1">
+          <Proxy value="543"/>
+          <Domain name="proxy_list" id="540.GlyphTransform.proxy_list">
+            <Proxy value="543"/>
+          </Domain>
+        </Property>
+        <Property name="Input" id="540.Input" number_of_elements="1">
+          <Domain name="groups" id="540.Input.groups">
+            <Group value="sources"/>
+            <Group value="filters"/>
+          </Domain>
+          <Domain name="input_array1" id="540.Input.input_array1">
+            <InputArray attribute_type="point" number_of_components="1"/>
+          </Domain>
+          <Domain name="input_array2" id="540.Input.input_array2">
+            <InputArray attribute_type="point" number_of_components="3"/>
+          </Domain>
+          <Domain name="input_type" id="540.Input.input_type">
+            <DataType value="vtkDataSet"/>
+          </Domain>
+        </Property>
+        <Property name="MaximumNumberOfPoints" id="540.MaximumNumberOfPoints" number_of_elements="1">
+          <Element index="0" value="10000"/>
+          <Domain name="range" id="540.MaximumNumberOfPoints.range">
+            <Min index="0" value="0"/>
+          </Domain>
+        </Property>
+        <Property name="RandomMode" id="540.RandomMode" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bool" id="540.RandomMode.bool"/>
+        </Property>
+        <Property name="SelectInputScalars" id="540.SelectInputScalars" number_of_elements="5">
+          <Element index="0" value=""/>
+          <Element index="1" value=""/>
+          <Element index="2" value=""/>
+          <Element index="3" value="0"/>
+          <Element index="4" value="pores_radius"/>
+          <Domain name="array_list" id="540.SelectInputScalars.array_list">
+            <String text="pores_radius"/>
+          </Domain>
+        </Property>
+        <Property name="SelectInputVectors" id="540.SelectInputVectors" number_of_elements="5">
+          <Element index="0" value="1"/>
+          <Element index="1" value=""/>
+          <Element index="2" value=""/>
+          <Element index="3" value="0"/>
+          <Element index="4" value=""/>
+          <Domain name="array_list" id="540.SelectInputVectors.array_list"/>
+        </Property>
+        <Property name="SetOrient" id="540.SetOrient" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bool" id="540.SetOrient.bool"/>
+        </Property>
+        <Property name="SetScaleFactor" id="540.SetScaleFactor" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bounds" id="540.SetScaleFactor.bounds">
+            <Min index="0" value="0"/>
+            <Max index="0" value="0.6"/>
+          </Domain>
+          <Domain name="scalar_range" id="540.SetScaleFactor.scalar_range">
+            <Min index="0" value="0.061475"/>
+            <Max index="0" value="0.521237"/>
+          </Domain>
+          <Domain name="vector_range" id="540.SetScaleFactor.vector_range"/>
+        </Property>
+        <Property name="SetScaleMode" id="540.SetScaleMode" number_of_elements="1">
+          <Element index="0" value="0"/>
+          <Domain name="enum" id="540.SetScaleMode.enum">
+            <Entry value="0" text="scalar"/>
+            <Entry value="1" text="vector"/>
+            <Entry value="2" text="vector_components"/>
+            <Entry value="3" text="off"/>
+          </Domain>
+        </Property>
+        <Property name="Source" id="540.Source" number_of_elements="1">
+          <Proxy value="549" output_port="0"/>
+          <Domain name="groups" id="540.Source.groups">
+            <Group value="sources"/>
+            <Group value="glyph_sources"/>
+          </Domain>
+          <Domain name="input_type" id="540.Source.input_type">
+            <DataType value="vtkPolyData"/>
+          </Domain>
+          <Domain name="proxy_list" id="540.Source.proxy_list">
+            <Proxy value="544"/>
+            <Proxy value="545"/>
+            <Proxy value="546"/>
+            <Proxy value="547"/>
+            <Proxy value="548"/>
+            <Proxy value="549"/>
+            <Proxy value="550"/>
+          </Domain>
+        </Property>
+        <Property name="UseMaskPoints" id="540.UseMaskPoints" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bool" id="540.UseMaskPoints.bool"/>
+        </Property>
+      </Proxy>
+      <Proxy group="extended_sources" type="Transform2" id="543" servers="1" compound_name="auto_543">
+        <Property name="Position" id="543.Position" number_of_elements="3">
+          <Element index="0" value="0"/>
+          <Element index="1" value="0"/>
+          <Element index="2" value="0"/>
+          <Domain name="range" id="543.Position.range"/>
+        </Property>
+        <Property name="PositionInfo" id="543.PositionInfo" number_of_elements="3">
+          <Element index="0" value="0"/>
+          <Element index="1" value="0"/>
+          <Element index="2" value="0"/>
+        </Property>
+        <Property name="Rotation" id="543.Rotation" number_of_elements="3">
+          <Element index="0" value="0"/>
+          <Element index="1" value="0"/>
+          <Element index="2" value="0"/>
+          <Domain name="range" id="543.Rotation.range"/>
+        </Property>
+        <Property name="RotationInfo" id="543.RotationInfo" number_of_elements="3">
+          <Element index="0" value="0"/>
+          <Element index="1" value="0"/>
+          <Element index="2" value="0"/>
+        </Property>
+        <Property name="Scale" id="543.Scale" number_of_elements="3">
+          <Element index="0" value="1"/>
+          <Element index="1" value="1"/>
+          <Element index="2" value="1"/>
+          <Domain name="range" id="543.Scale.range"/>
+        </Property>
+        <Property name="ScaleInfo" id="543.ScaleInfo" number_of_elements="3">
+          <Element index="0" value="1"/>
+          <Element index="1" value="1"/>
+          <Element index="2" value="1"/>
+        </Property>
+      </Proxy>
+      <Proxy group="sources" type="SphereSource" id="549" servers="1" compound_name="auto_549">
+        <Property name="Center" id="549.Center" number_of_elements="3">
+          <Element index="0" value="0"/>
+          <Element index="1" value="0"/>
+          <Element index="2" value="0"/>
+          <Domain name="range" id="549.Center.range"/>
+        </Property>
+        <Property name="EndPhi" id="549.EndPhi" number_of_elements="1">
+          <Element index="0" value="180"/>
+          <Domain name="range" id="549.EndPhi.range">
+            <Min index="0" value="0"/>
+            <Max index="0" value="180"/>
+          </Domain>
+        </Property>
+        <Property name="EndTheta" id="549.EndTheta" number_of_elements="1">
+          <Element index="0" value="360"/>
+          <Domain name="range" id="549.EndTheta.range">
+            <Min index="0" value="0"/>
+            <Max index="0" value="360"/>
+          </Domain>
+        </Property>
+        <Property name="PhiResolution" id="549.PhiResolution" number_of_elements="1">
+          <Element index="0" value="12"/>
+          <Domain name="range" id="549.PhiResolution.range">
+            <Min index="0" value="3"/>
+          </Domain>
+        </Property>
+        <Property name="Radius" id="549.Radius" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="range" id="549.Radius.range">
+            <Min index="0" value="0"/>
+          </Domain>
+        </Property>
+        <Property name="StartPhi" id="549.StartPhi" number_of_elements="1">
+          <Element index="0" value="0"/>
+          <Domain name="range" id="549.StartPhi.range">
+            <Min index="0" value="0"/>
+            <Max index="0" value="180"/>
+          </Domain>
+        </Property>
+        <Property name="StartTheta" id="549.StartTheta" number_of_elements="1">
+          <Element index="0" value="0"/>
+          <Domain name="range" id="549.StartTheta.range">
+            <Min index="0" value="0"/>
+            <Max index="0" value="360"/>
+          </Domain>
+        </Property>
+        <Property name="ThetaResolution" id="549.ThetaResolution" number_of_elements="1">
+          <Element index="0" value="12"/>
+          <Domain name="range" id="549.ThetaResolution.range">
+            <Min index="0" value="3"/>
+          </Domain>
+        </Property>
+      </Proxy>
+      <ExposedProperties>
+        <Property name="Input" proxy_name="Glyph1" exposed_name="Input"/>
+        <Property name="MaximumNumberOfPoints" proxy_name="Glyph1" exposed_name="Maximum Number of Points"/>
+        <Property name="SetScaleFactor" proxy_name="Glyph1" exposed_name="Set Scale Factor"/>
+      </ExposedProperties>
+      <OutputPort name="Output" proxy="Glyph1" port_index="0"/>
+    </CompoundSourceProxy>
+  </CustomProxyDefinition>
+  <CustomProxyDefinition name="NetworkThroats" group="filters">
+    <CompoundSourceProxy id="992" servers="1">
+      <Proxy group="filters" type="CellDataToPointData" id="882" servers="1" compound_name="CellDatatoPointData1">
+        <Property name="Input" id="882.Input" number_of_elements="1">
+          <Proxy value="827" output_port="0"/>
+          <Domain name="groups" id="882.Input.groups">
+            <Group value="sources"/>
+            <Group value="filters"/>
+          </Domain>
+          <Domain name="input_array" id="882.Input.input_array">
+            <InputArray attribute_type="cell" number_of_components="0"/>
+          </Domain>
+          <Domain name="input_type" id="882.Input.input_type">
+            <DataType value="vtkDataSet"/>
+          </Domain>
+        </Property>
+        <Property name="PassCellData" id="882.PassCellData" number_of_elements="1">
+          <Element index="0" value="0"/>
+          <Domain name="bool" id="882.PassCellData.bool"/>
+        </Property>
+        <Property name="PieceInvariant" id="882.PieceInvariant" number_of_elements="1">
+          <Element index="0" value="0"/>
+          <Domain name="bool" id="882.PieceInvariant.bool"/>
+        </Property>
+      </Proxy>
+      <Proxy group="filters" type="DataSetSurfaceFilter" id="827" servers="1" compound_name="ExtractSurface1">
+        <Property name="Input" id="827.Input" number_of_elements="1">
+          <Proxy value="760" output_port="0"/>
+          <Domain name="groups" id="827.Input.groups">
+            <Group value="sources"/>
+            <Group value="filters"/>
+          </Domain>
+          <Domain name="input_type" id="827.Input.input_type">
+            <DataType value="vtkDataSet"/>
+          </Domain>
+        </Property>
+        <Property name="NonlinearSubdivisionLevel" id="827.NonlinearSubdivisionLevel" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="range" id="827.NonlinearSubdivisionLevel.range">
+            <Min index="0" value="0"/>
+            <Max index="0" value="4"/>
+          </Domain>
+        </Property>
+        <Property name="PieceInvariant" id="827.PieceInvariant" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bool" id="827.PieceInvariant.bool"/>
+        </Property>
+      </Proxy>
+      <Proxy group="filters" type="ShrinkFilter" id="760" servers="1" compound_name="Shrink1">
+        <Property name="Input" id="760.Input" number_of_elements="1">
+          <Domain name="groups" id="760.Input.groups">
+            <Group value="sources"/>
+            <Group value="filters"/>
+          </Domain>
+          <Domain name="input_type" id="760.Input.input_type">
+            <DataType value="vtkDataSet"/>
+          </Domain>
+        </Property>
+        <Property name="ShrinkFactor" id="760.ShrinkFactor" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="range" id="760.ShrinkFactor.range">
+            <Min index="0" value="0"/>
+            <Max index="0" value="1"/>
+          </Domain>
+        </Property>
+      </Proxy>
+      <Proxy group="filters" type="TubeFilter" id="937" servers="1" compound_name="Tube1">
+        <Property name="Capping" id="937.Capping" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bool" id="937.Capping.bool"/>
+        </Property>
+        <Property name="DefaultNormal" id="937.DefaultNormal" number_of_elements="3">
+          <Element index="0" value="0"/>
+          <Element index="1" value="0"/>
+          <Element index="2" value="1"/>
+          <Domain name="range" id="937.DefaultNormal.range"/>
+        </Property>
+        <Property name="Input" id="937.Input" number_of_elements="1">
+          <Proxy value="882" output_port="0"/>
+          <Domain name="groups" id="937.Input.groups">
+            <Group value="sources"/>
+            <Group value="filters"/>
+          </Domain>
+          <Domain name="input_array1" id="937.Input.input_array1">
+            <InputArray attribute_type="point" number_of_components="1"/>
+          </Domain>
+          <Domain name="input_array2" id="937.Input.input_array2">
+            <InputArray attribute_type="point" number_of_components="3"/>
+          </Domain>
+          <Domain name="input_type" id="937.Input.input_type">
+            <DataType value="vtkPolyData"/>
+          </Domain>
+        </Property>
+        <Property name="NumberOfSides" id="937.NumberOfSides" number_of_elements="1">
+          <Element index="0" value="12"/>
+          <Domain name="range" id="937.NumberOfSides.range">
+            <Min index="0" value="3"/>
+          </Domain>
+        </Property>
+        <Property name="Radius" id="937.Radius" number_of_elements="1">
+          <Element index="0" value="0.03"/>
+          <Domain name="bounds" id="937.Radius.bounds">
+            <Min index="0" value="0"/>
+            <Max index="0" value="0.06"/>
+          </Domain>
+        </Property>
+        <Property name="RadiusFactor" id="937.RadiusFactor" number_of_elements="1">
+          <Element index="0" value="3"/>
+          <Domain name="range" id="937.RadiusFactor.range"/>
+        </Property>
+        <Property name="SelectInputScalars" id="937.SelectInputScalars" number_of_elements="5">
+          <Element index="0" value=""/>
+          <Element index="1" value=""/>
+          <Element index="2" value=""/>
+          <Element index="3" value="0"/>
+          <Element index="4" value="throats_radius"/>
+          <Domain name="array_list" id="937.SelectInputScalars.array_list">
+            <String text="pores_radius"/>
+            <String text="throats_radius"/>
+          </Domain>
+        </Property>
+        <Property name="SelectInputVectors" id="937.SelectInputVectors" number_of_elements="5">
+          <Element index="0" value="1"/>
+          <Element index="1" value=""/>
+          <Element index="2" value=""/>
+          <Element index="3" value="0"/>
+          <Element index="4" value=""/>
+          <Domain name="array_list" id="937.SelectInputVectors.array_list"/>
+        </Property>
+        <Property name="UseDefaultNormal" id="937.UseDefaultNormal" number_of_elements="1">
+          <Element index="0" value="0"/>
+          <Domain name="bool" id="937.UseDefaultNormal.bool"/>
+        </Property>
+        <Property name="VaryRadius" id="937.VaryRadius" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="enum" id="937.VaryRadius.enum">
+            <Entry value="0" text="Off"/>
+            <Entry value="1" text="By Scalar"/>
+            <Entry value="2" text="By Vector"/>
+            <Entry value="3" text="By Absolute Scalar"/>
+          </Domain>
+        </Property>
+      </Proxy>
+      <ExposedProperties>
+        <Property name="Input" proxy_name="Shrink1" exposed_name="Input"/>
+        <Property name="NumberOfSides" proxy_name="Tube1" exposed_name="Number of Sides (Resolutions)"/>
+        <Property name="Radius" proxy_name="Tube1" exposed_name="Radius"/>
+        <Property name="RadiusFactor" proxy_name="Tube1" exposed_name="Radius Factor"/>
+        <Property name="VaryRadius" proxy_name="Tube1" exposed_name="Vary Radius"/>
+      </ExposedProperties>
+      <OutputPort name="Output" proxy="Tube1" port_index="0"/>
+    </CompoundSourceProxy>
+  </CustomProxyDefinition>
+</CustomFilterDefinitions>
