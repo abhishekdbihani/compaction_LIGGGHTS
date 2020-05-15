@@ -31,7 +31,7 @@ I) LIGGGHTS script-
 
 Navigate to the src folder using the linux command line, and run the following code (adjust the number of CPU processors to be used)-
 
-mpirun -np 6 liggghts < in.uniaxialTest
+ ``` mpirun -np 6 liggghts < in.uniaxialTest  ```
 
 The in.uniaxialTest script consists of three main stages-
 
