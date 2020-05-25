@@ -23,7 +23,7 @@ MATLAB is required for the post-processing the results and plotting graphs.
 
 *i) ParaView* 
 
-ParaView will allow visualization of the grain pack and force chain behavior during the compaction process.
+[ParaView](https://www.paraview.org/download/) will allow visualization of the grain pack and force chain behavior during the compaction process.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
