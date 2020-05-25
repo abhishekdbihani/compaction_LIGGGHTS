@@ -56,15 +56,19 @@ The plot_creator.m script can be used to plot the change in calculated variables
 
 The ParaView visualization works with version 4.0.1 and requires importing custom filter NetworkFlow.cpd. The grains can be observed using the NetworkPores filter and the force-chains using the NetworkThroats filter. 
 
-The exported grain center coordinates and radii (xyzr.csv files) can be used as inputs for running an invasion percolation code.  
+The exported grain center coordinates and radii (xyzr.csv files) can be used as inputs for running an invasion percolation code. 
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 ## Example
 
-Datasets like [this](https://www.digitalrocksportal.org/projects/204) one can be prepared using this code.
-
-The figure shows the visualization in PARAVIEW of a grain pack subjected to uniaxial testing in three stages- 1) No compaction, 2) Limited Compaction, 3) Final Compaction with a) 3D structure, b) 2D cross-section, and c) force chains for each stage.
+The figure below shows the visualization in PARAVIEW of a grain pack subjected to uniaxial testing in three stages- 1) No compaction, 2) Limited Compaction, 3) Final Compaction with a) 3D structure, b) 2D cross-section, and c) force chains for each stage.
 
 <img src="https://github.com/abhishekdbihani/compaction_LIGGGHTS/blob/master/example%20compaction%20picture.png" align="middle" width="900" height="550" alt="compaction visualization" >
+
+Datasets like [this](https://www.digitalrocksportal.org/projects/204) one can also be prepared using this code.
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 ## Citation
 
