@@ -1,33 +1,36 @@
-This repository contains the script for creating a bidisperse grain pack and running a uniaxial compaction test on it using LIGGGHTS. Scripts for post-processing (calculating, plotting and visualizing coordination numbers and force chains) are also provided.
+# Uniaxial Compaction and Force-chain Analysis of Bidisperse Grain packs
+
+This repository contains the script for creating a bidisperse (two radii) grain pack under gravity and running a uniaxial compaction test on it using LIGGGHTS library (C++) on high-performance computing (HPC) resources. Scripts for post-processing like calculating, plotting and visualizing coordination numbers and force chains to study the grain behavior when subjected to compaction are also provided.
 
 Created by Abhishek Bihani (Supervisor: Hugh Daigle).
 May 2020
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Pre-requisities:
+## Pre-requisities
 
-i) LIGGGHTS
-ii) MATLAB
-
-Recommended:
-
-i) ParaView 
+*i) LIGGGHTS*
 
 Please install LIGGGHTS on your system. 
 Link- https://www.cfdem.com/media/DEM/docu/Section_start.html
 
 If working with Windows, one option is to install the ubuntu app and then install LIGGGHTS as a library with pre-compiled codes. This is likely to reduce the possible issues compared to the other methods.
 
+*ii) MATLAB*
+
 MATLAB is required for the post-processing the results and plotting graphs.
+
+## Recommended
+
+*i) ParaView* 
 
 ParaView will allow visualization of the grain pack and force chain behavior during the compaction process.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Procedure & Details-
+## Procedure & Details
 
-I) LIGGGHTS script-
+### I) LIGGGHTS script
 
 Navigate to the src folder using the linux command line, and run the following code (adjust the number of CPU processors to be used)-
 
@@ -35,17 +38,18 @@ Navigate to the src folder using the linux command line, and run the following c
 
 The in.uniaxialTest script consists of three main stages-
 
-a) Initializing input variables (Lines 3 to 76) 
-b) Creating & modifying the grain pack (Lines 77 to 101)
-c) Uniaxial compaction (Lines 102 to 141) 
+*a) Initializing input variables (Lines 3 to 76)* 
+
+*b) Creating & modifying the grain pack (Lines 77 to 101)*
+
+*c) Uniaxial compaction (Lines 102 to 141)* 
   
 The radius of the grains can be changed on lines 46 (small) and 47 (large)
 The concentration by grain volume can be changed on lines 48 (small) and 49 (large)
 
 On running the script, walls are imported to form the domain, and then grains are inserted upto step 10000, allowed to settle and grains outside set domain removed at step 16000. Compaction steps are from 16000 to 36000. The code returns an output every 2000 steps in form of force chain and grain properties. Both the output files are exported in two file types (without extension in tabular form and .vtp/vtr for opening in ParaView).
     
-
-II) Post-processing-
+### II) Post-processing
 
 Run forcechain_ana.m script in MATLAB for analyzing the strong/weak force chain networks and their relation with Large-Large, Large-Small, Small-Small grain contacts. It calculates the different properties as a function of compaction and saves it in post-processing.csv and also creates a .vtk file which can be used to study strong/weak force chains and grain positions in ParaView. 
 
@@ -53,4 +57,18 @@ The plot_creator.m script can be used to plot the change in calculated variables
 
 The ParaView visualization works with version 4.0.1 and requires importing custom filter NetworkFlow.cpd. The grains can be observed using the NetworkPores filter and the force-chains using the NetworkThroats filter. 
 
-The exported grain center coordinates and radii (xyzr.csv files) can be used as inputs for running the invasion percolation code.      
+The exported grain center coordinates and radii (xyzr.csv files) can be used as inputs for running an invasion percolation code.  
+
+## Example
+
+Datasets like [this](https://www.digitalrocksportal.org/projects/204) one can be prepared using this code.
+
+The figure shows the visualization in PARAVIEW of a grain pack subjected to uniaxial testing in three stages- 1) No compaction, 2) Limited Compaction, 3) Final Compaction with a) 3D structure, b) 2D cross-section, and c) force chains for each stage.
+
+<img src="https://github.com/abhishekdbihani/compaction_LIGGGHTS/blob/master/example%20compaction%20picture.png" align="middle" width="900" height="550" alt="compaction visualization" >
+
+## Citation
+
+If you use this repository, please cite as-
+
+Bihani A. and Daigle H. Uniaxial Compaction and Force-chain Analysis of Bidisperse Grain packs. Git Code (2020)
