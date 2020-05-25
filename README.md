@@ -11,10 +11,9 @@ May 2020
 
 *i) LIGGGHTS*
 
-Please install LIGGGHTS on your system. 
-Link- https://www.cfdem.com/media/DEM/docu/Section_start.html
+Please install LIGGGHTS on your system. You can find downloading instructions [here](https://www.cfdem.com/media/DEM/docu/Section_start.html).
 
-If working with Windows, one option is to install the ubuntu app and then install LIGGGHTS as a library with pre-compiled codes. This is likely to reduce the possible issues compared to the other methods.
+Note - If working with Windows, one option is to install the [ubuntu terminal](https://ubuntu.com/wsl) and then install LIGGGHTS as a library with pre-compiled codes. This is likely to reduce the possible issues compared to the other methods.
 
 *ii) MATLAB*
 
