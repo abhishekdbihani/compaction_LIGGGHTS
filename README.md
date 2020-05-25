@@ -74,4 +74,4 @@ Datasets like [this](https://www.digitalrocksportal.org/projects/204) one can al
 
 If you use this repository, please cite as-
 
-Bihani A. and Daigle H. Uniaxial Compaction and Force-chain Analysis of Bidisperse Grain packs. Git Code (2020)
+Bihani A. and Daigle H. Uniaxial Compaction and Force-chain Analysis of Bidisperse Grain packs. Git Code (2020) https://github.com/abhishekdbihani/compaction_LIGGGHTS
