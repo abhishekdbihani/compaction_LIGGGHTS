@@ -15,9 +15,9 @@ Please install LIGGGHTS on your system. You can find downloading instructions [h
 
 Note - If working with Windows, one option is to install the [ubuntu terminal](https://ubuntu.com/wsl) and then install LIGGGHTS as a library with pre-compiled codes. This is likely to reduce the possible issues compared to the other methods.
 
-*ii) MATLAB*
+*ii) MATLAB/OCTAVE*
 
-MATLAB is required for the post-processing the results and plotting graphs.
+MATLAB or OCTAVE is required for the post-processing the results and plotting graphs.
 
 ## Recommended
 
