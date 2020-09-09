@@ -2,9 +2,6 @@
 
 This repository contains the script for creating a bidisperse (two radii) grain pack under gravity and running a uniaxial compaction test on it using LIGGGHTS library (C++) on high-performance computing (HPC) resources. Scripts for post-processing like calculating, plotting and visualizing coordination numbers and force chains to study the grain behavior when subjected to compaction are also provided.
 
-Created by Abhishek Bihani (Supervisor: Hugh Daigle).
-May 2020
-
 ----------------------------------------------------------------------------------------------------------------------------------
 
 ## Pre-requisities
@@ -74,4 +71,4 @@ Datasets like [this](https://www.digitalrocksportal.org/projects/204) one can al
 
 If you use this repository, please cite as-
 
-Bihani A. and Daigle H. Uniaxial Compaction and Force-chain Analysis of Bidisperse Grain packs. Git Code (2020) https://github.com/abhishekdbihani/compaction_LIGGGHTS
+Bihani, A., & Daigle, H. (2020, September 9). Uniaxial Compaction and Force-chain Analysis of Bidisperse Grain Packs (Version v1.0). Zenodo. http://doi.org/10.5281/zenodo.4021433
