@@ -74,7 +74,4 @@ If you use this repository, please cite as-
 
 Bihani, A., & Daigle, H. (2020, September 9). Uniaxial Compaction and Force-chain Analysis of Bidisperse Grain Packs (Version v1.0). Zenodo. http://doi.org/10.5281/zenodo.4021433
 
-## Related Publications
-
-Bihani A., Daigle H. (in-review). Seal Capacity, Force Chains, and Percolation in Silt-Clay Mixtures. Journal of Geophysical Research- Solid Earth. https://doi.org/10.1002/essoar.10504349.1
 
